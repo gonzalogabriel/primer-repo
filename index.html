@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RECY-CLEAN</title>
+    
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script>
+
+var dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+ 
+ //Function
+
+    for(k in dias) {
+        console.log(dias[k])
+    }
+    dias.forEach(function(dia) {
+        console.log(dia);
+    })
+    dias.forEach(dia => console.log(dia))
+
+    var autos = ["Fiat","Mazda"]
+
+    autos.forEach(auto =>console.log(auto)) 
+
+    var vegetales = ['Repollo', 'Nabo', 'Rábano', 'Zanahoria'];
+
+        console.log(vegetales);
+        console.log(vegetales.length)
+        primer_vegetal = vegetales[0];
+        console.log(primer_vegetal);
+        ultimo_vegetal = vegetales[vegetales.length-1]   
+        console.log(ultimo_vegetal)
+
+    // ["Repollo", "Nabo", "Rábano", "Zanahoria"]
+
+    var pos = 1, n = 2;
+
+    var elementosEliminados = vegetales.splice(pos, n);
+    
+    // así es como se eliminan elementos, n define la cantidad de elementos a eliminar,
+    // de esa posicion(pos) en adelante hasta el final del array.
+
+    console.log(vegetales); 
+    
+    // ["Repollo", "Zanahoria"] (el array original ha cambiado)
+
+    console.log(elementosEliminados); 
+    
+    // ["Nabo", "Rábano"]
+
+// OBJETOS OBJETOS OBJETOS OBJETOS OBJETOS OBJETOS OBJETOS OBJETOS OBJETOS OBJETOS OBJETOS OBJETOS OBJETOS OBJETOS
+
+var persona = {PrimerNombre:"Gonzalo", Apellido:"Gonzalez", edad:46, color_ojos: "café"}; 
+console.log(persona);
+
+var Bienes = ["Perro", "Apartamento", "Auto", "Bicicleta"];
+
+var esposa = {PrimerNombre:"Jeny", Apellido:"Leal", edad:36, color_ojos:"café"};
+
+persona.Bienes = Bienes;
+console.log(persona);
+
+persona.esposa = esposa;
+console.log(persona);
+
+function Eliminar(){
+
+    document.getElementById("prueba-lista").children[0].remove();
+
+
+} 
+function agregarItem(){
+
+    var textoEntrada = document.getElementById("texto-entrada").value;
+                
+                console.log(typeof textoEntrada)
+                console.log("Se ejecutò la función uno")
+                
+    var nodo = document.createElement("li");
+
+    var textoNodo = document.createTextNode(textoEntrada);
+
+                nodo.appendChild(textoNodo);
+
+    document.getElementById("prueba-lista").appendChild(nodo)
+
+}
+
+
+
+</script>
+
+
+
+</head>
+
+<body>
+    <title>RECY . CEKBA</title>
+
+     <!-- <h1>recy-clean app gratis<span class="badge badge-secondary">New</span></h1> -->
+   
+     <h1><div id="demo"></div> <span class="badge badge-secondary">New</span></h1>
+   
+   
+   <script>
+    var amigos = {
+    Nombre: "Sergio",
+    Apellido : "Gutierrez",
+    ETB       : 11057,
+    fullName : function() {
+       return this.Nombre + " " + this.Apellido
+    }
+}
+document.getElementById("demo").innerHTML = amigos.fullName();
+
+    </script>
+   
+    <blockquote class="blockquote text-center">
+        <p class="mb-0">RECY-CLEAN permite a los ciudadanos acceder a beneficios, gracias a su aporte reciclando los desechos.</p>
+        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+
+      </blockquote>
+
+      <div class="parrafo">
+        <p>RECY-CLEAN permite a los ciudadanos acceder a beneficios, gracias a su aporte reciclando los desechos.</p>
+      </div>
+      <div class="parrafo">
+            <p>RECY-CLEAN pneficios, gracias a su aporte reciclando los desechos.</p>
+          </div>
+    
+          <div class="parrafo">
+                <p>cios, gracias a su aporte reciclando los desechos.</p>
+              </div>
+    <div>
+        
+        <h6>Ejemplo BOOTSTRAP </h6>
+        
+        <div class="container">
+            <div class="row">
+              <div class="col-6 col-md-4">
+                RECICLAR
+              </div>
+              <div class="col -6 col-md-4">
+                Salvar el Planeta
+              </div>
+              <div class="col-6 col-md-4">
+                Ahorrar dinero
+              </div>
+            </div>
+          </div>
+
+
+    </div>
+    
+
+    </p>
+    <h2> <strong>Como reciclar</strong> </h2>
+   
+    <div id="imagenes">
+        <img src="CÓMO RECICLAR.jpg" alt="Como reciclar">
+    </div>
+    
+    
+    <h3>Ejemplo Título</h3>
+    <h4>Ejemplo Título</h4>
+    <h5>Ejemplo Título</h5>
+    <h6>Ejemplo Título</h6>
+
+    <p>
+        <a href="https://es.wikipedia.org/wiki/Cerveza_de_Alemania"> Cerveza Weizenbier</a> en su vaso típico con abertura amplia.
+        <abbr title="ES UN GRAN PAIS"> Alemania </abbr>tiene la <a href="https://www.elle.com/es/moda/noticias/g23059700/victorias-secret-2018-desfile/">moda</a> de ser un   país consumidor </a> de cerveza, y es por tradición uno de los países más cerveceros del mundo, tanto en elaboración como en consumo per cápita. Con sus 131,7 litros por persona al año (2005) ocupa el tercer puesto como consumidor en Europa, después de la República Checa e Irlanda. España por ejemplo ocupa el lugar décimo, siendo la media europea de 84,4 litros por persona al año. 
+
+        </p>
+    <div id="contenedor-uno" class="contenedor primer">
+       <ul style="float: left; width:50%">
+            <li>Gato</li>
+            <li>Perro</li>
+            <li>Pájato</li>
+            <li>Serpiente</li>
+            <li>Búfalo</li>
+            <li>Burro</li>
+            <li>Aguila</li>
+       </ul>
+       <ol>
+            <li>Gato</li>
+            <li>Perro</li>
+            <li>Pájato</li>
+            <li>Serpiente</li>
+            <li>Búfalo</li>
+            <li>Burro</li>
+            <li>Aguila</li>
+       </ol>
+
+
+    </div>
+    <div id="contenedor-dos" class="contenedor">
+        <img src="recicla.jpg" alt="Reciclar es bueno para el medio ambiente">
+
+    </div>
+
+    <div>
+        <h1>Atención app gratis<span class="badge badge-secondary">New</span></h1>
+        <span class="parpadea text"><strong>$ 💵 💵  $ Recicla y ahorra dinero $ 💵 💵  $ </strong>
+
+    </div>
+
+    <div class="row-500">
+        <ol id = "prueba-lista"> 
+
+            <li>UNO</li>
+            <li>DOS</li>
+            <li>TRES</li>
+            <li>CUATRO</li>
+            <li>CINCO</li>
+        </ul> 
+    </div>
+
+    <div>
+         <button onclick = "Eliminar()"> ELIMINAR haciendo CLICK "Aquí"  </button> 
+
+    </div>
+
+     <div class="row-90">
+        <div class="col-80">
+            <input type="text" id="texto-entrada">
+        </div>
+        
+        <div>
+            <button onclick="agregarItem()">Adicionar elementos de la lista</button>
+        </div>
+    </div>
+
+</html>
